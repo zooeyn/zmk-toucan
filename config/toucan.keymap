@@ -101,13 +101,19 @@
 
         base {
             bindings = <
-&kp GRAVE  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp SQT  &kp BSLH  &kp ESC  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp SEMI  &kp LSHFT  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT  &lt 1 LG(SPACE)  &kp SPACE  &kp TAB  &kp RET  &kp BSPC  &lt 1 RA(SPACE)
+&kp GRAVE        &kp Q      &kp W         &kp F        &kp P        &kp B            &kp J  &kp L        &kp U        &kp Y         &kp SQT   &kp BSLH
+&kp ESC          &kp A      &hml LCTRL R  &hml LALT S  &hml LCMD T  &kp G            &kp M  &hmr RGUI N  &hmr RALT E  &hmr RCTRL I  &kp O     &kp SEMI
+&kp LSHFT        &kp Z      &kp X         &kp C        &kp D        &kp V            &kp K  &kp H        &kp COMMA    &kp DOT       &kp FSLH  &kp RSHFT
+&lt 1 LG(SPACE)  &kp SPACE  &kp TAB       &kp RET      &kp BSPC     &lt 1 RA(SPACE)
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans  &trans  &trans  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &kp EXCL  &kp CARET  &kp AMPS  &kp STAR  &kp MINUS  &kp UNDER  &kp PLUS  &kp EQUAL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2    &kp N3     &kp N4    &kp N5     &kp N6     &kp N7     &kp N8    &kp N9     &kp N0  &trans
+&trans  &trans  &kp AT    &kp HASH   &kp DLLR  &kp PRCNT  &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans  &trans
+&trans  &trans  &kp EXCL  &kp CARET  &kp AMPS  &kp STAR   &kp MINUS  &kp UNDER  &kp PLUS  &kp EQUAL  &trans  &trans
+&trans  &trans  &trans    &trans     &trans    &trans
             >;
         };
     };
