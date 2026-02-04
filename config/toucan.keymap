@@ -62,37 +62,37 @@
 
         lbrc {
             bindings = <&kp LBRC>;
-            key-positions = <4 5>;
+            key-positions = <7 8>;
         };
 
         lpar {
             bindings = <&kp LPAR>;
-            key-positions = <16 17>;
+            key-positions = <19 20>;
         };
 
         lbkt {
             bindings = <&kp LBKT>;
-            key-positions = <28 29>;
+            key-positions = <31 32>;
         };
 
         rbrc {
             bindings = <&kp RBRC>;
-            key-positions = <6 7>;
+            key-positions = <8 9>;
         };
 
         rpar {
             bindings = <&kp RPAR>;
-            key-positions = <18 19>;
+            key-positions = <20 21>;
         };
 
         rbkt {
             bindings = <&kp RBKT>;
-            key-positions = <30 31>;
+            key-positions = <32 33>;
         };
 
         caps {
             bindings = <&kp CAPS>;
-            key-positions = <24 36>;
+            key-positions = <24 35>;
         };
     };
 
