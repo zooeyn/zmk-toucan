@@ -94,6 +94,36 @@
             bindings = <&kp CAPS>;
             key-positions = <24 35>;
         };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <3 4>;
+        };
+
+        times {
+            bindings = <&kp STAR>;
+            key-positions = <1 2>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <15 16>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <14 15>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <27 28>;
+        };
+
+        under {
+            bindings = <&kp UNDER>;
+            key-positions = <26 27>;
+        };
     };
 
     keymap {
