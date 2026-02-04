@@ -103,12 +103,12 @@
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <14 15>;
+            key-positions = <27 28>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <27 28>;
+            key-positions = <14 15>;
         };
 
         under {
@@ -118,12 +118,12 @@
 
         caret {
             bindings = <&kp CARET>;
-            key-positions = <3 4>;
+            key-positions = <3 2>;
         };
 
         times {
             bindings = <&kp STAR>;
-            key-positions = <2 3>;
+            key-positions = <3 4>;
         };
 
         layer-lock {
