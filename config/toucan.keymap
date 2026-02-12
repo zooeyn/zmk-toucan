@@ -39,7 +39,7 @@
     combos {
         compatible = "zmk,combos";
 
-        caps {
+        caps-lock {
             bindings = <&kp CAPS>;
             key-positions = <24 35>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
