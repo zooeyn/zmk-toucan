@@ -53,84 +53,84 @@
 
         caret {
             bindings = <&kp CARET>;
-            key-positions = <3 2>;
+            key-positions = <8 7>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         times {
             bindings = <&kp STAR>;
-            key-positions = <3 4>;
+            key-positions = <8 9>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <14 15>;
+            key-positions = <31 32>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <15 16>;
+            key-positions = <19 20>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         under {
             bindings = <&kp UNDER>;
-            key-positions = <26 27>;
+            key-positions = <32 33>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <27 28>;
+            key-positions = <20 21>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         lbrc {
             bindings = <&kp LBRC>;
-            key-positions = <7 8>;
+            key-positions = <3 2>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         rbrc {
             bindings = <&kp RBRC>;
-            key-positions = <8 9>;
+            key-positions = <3 4>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         lpar {
             bindings = <&kp LPAR>;
-            key-positions = <19 20>;
+            key-positions = <14 15>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         rpar {
             bindings = <&kp RPAR>;
-            key-positions = <20 21>;
+            key-positions = <15 16>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         lbkt {
             bindings = <&kp LBKT>;
-            key-positions = <31 32>;
+            key-positions = <26 27>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         rbkt {
             bindings = <&kp RBKT>;
-            key-positions = <32 33>;
+            key-positions = <27 28>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
