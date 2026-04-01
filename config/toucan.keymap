@@ -134,6 +134,16 @@
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
+
+        bt_next {
+            bindings = <&bt BT_NXT>;
+            key-positions = <36 37 38>;
+        };
+
+        bt_clear {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <39 40 41>;
+        };
     };
 
     keymap {
@@ -150,10 +160,10 @@
 
         sym {
             bindings = <
-&bt BT_NXT  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &bt BT_CLR_ALL
-&trans      &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans      &trans    &trans  &trans    &trans    &trans     &trans    &trans    &trans  &trans     &trans  &trans
-&trans      &trans    &trans  &trans    &trans    &trans
+&trans  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans    &trans  &trans    &trans    &trans     &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &trans    &trans  &trans    &trans    &trans
             >;
         };
     };
