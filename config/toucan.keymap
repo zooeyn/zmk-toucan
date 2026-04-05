@@ -57,7 +57,7 @@
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <22 21>;
+            key-positions = <21 20>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
