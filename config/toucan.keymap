@@ -37,7 +37,7 @@
 
         layer-lock {
             bindings = <&tog 1>;
-            key-positions = <37 40>;
+            key-positions = <36 41>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
         };
 
