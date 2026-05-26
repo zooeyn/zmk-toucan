@@ -157,10 +157,10 @@
 
         sym {
             bindings = <
-&trans    &kp N1           &kp N2        &kp N3         &kp N4         &kp N5     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0     &trans
-&kp AMPS  &mt LSHIFT EXCL  &mt LCTRL AT  &mt LALT HASH  &mt LGUI DLLR  &kp PRCNT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PG_DN  &kp PG_UP
-&trans    &kp N6           &kp N7        &kp N8         &kp N9         &kp N0     &kp N1    &kp N2    &kp N3  &kp N4     &kp N5     &trans
-&trans    &trans           &trans        &trans         &trans         &trans
+&bt BT_NXT  &kp N1           &kp N2        &kp N3         &kp N4         &kp N5     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0     &bt BT_CLR_ALL
+&kp AMPS    &mt LSHIFT EXCL  &mt LCTRL AT  &mt LALT HASH  &mt LGUI DLLR  &kp PRCNT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PG_DN  &kp PG_UP
+&trans      &kp N6           &kp N7        &kp N8         &kp N9         &kp N0     &kp N1    &kp N2    &kp N3  &kp N4     &kp N5     &trans
+&trans      &trans           &trans        &trans         &trans         &trans
             >;
         };
     };
