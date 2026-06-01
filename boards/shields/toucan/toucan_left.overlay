@@ -1,4 +1,6 @@
 #include "toucan.dtsi"
+#include <input/processors.dtsi>
+#include <behaviors/input_gestures_accel.dtsi>
 
 &pinctrl {
     spi0_default: spi0_default {
@@ -43,6 +45,20 @@ nice_view_spi: &spi0 {
     ;
 };
 
+&pointer_accel {
+    input-type = <INPUT_EV_REL>;
+    track-remainders;
+    min-factor = <800>;
+    max-factor = <3000>;
+    speed-threshold = <1200>;
+    speed-max = <6000>;
+    acceleration-exponent = <2>;
+};
+
 &glidepoint_listener {
     status = "okay";
+    input-processors = <
+        &pointer_accel
+        &zip_xy_scaler 8 2
+    >;
 };
