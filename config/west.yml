@@ -8,8 +8,6 @@ manifest:
       url-base: https://github.com/petejohanson/
     - name: geeksville
       url-base: https://github.com/geeksville
-    - name: oleksandrmaslov
-      url-base: https://github.com/oleksandrmaslov
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -17,8 +15,5 @@ manifest:
     - name: cirque-input-module
       remote: geeksville
       revision: toucan
-    - name: zmk-pointing-acceleration
-      remote: oleksandrmaslov
-      revision: main
   self:
     path: config

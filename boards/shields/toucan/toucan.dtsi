@@ -107,6 +107,7 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&glidepoint_split>;
+        input-processors = <&zip_xy_scaler 8 2>;
     };
 
     input_processors {
