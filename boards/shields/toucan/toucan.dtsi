@@ -108,6 +108,12 @@
         status = "disabled";
         device = <&glidepoint_split>;
         input-processors = <&zip_xy_scaler 8 2>;
+
+        sym_right_click {
+            layers = <2>;
+            input-processors = <&right_click_processor>;
+            process-next;
+        };
     };
 
     input_processors {
@@ -119,3 +125,4 @@
         };
     };
 };
+    
