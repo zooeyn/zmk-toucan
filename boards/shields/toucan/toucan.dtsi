@@ -110,7 +110,7 @@
         input-processors = <&zip_xy_scaler 8 2>;
 
         sym_right_click {
-            layers = <2>;
+            layers = <1>;
             input-processors = <&right_click_processor>;
             process-next;
         };
