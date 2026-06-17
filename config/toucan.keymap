@@ -93,7 +93,7 @@
 
         lbrc {
             bindings = <&kp LBRC>;
-            key-positions = <3 2>;
+            key-positions = <2 3>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
@@ -241,66 +241,6 @@
         backslash {
             bindings = <&kp BSLH>;
             key-positions = <22 34>;
-        };
-
-        pgup {
-            bindings = <&kp PG_UP>;
-            key-positions = <4 5>;
-        };
-
-        pgdn {
-            bindings = <&kp PG_DN>;
-            key-positions = <28 29>;
-        };
-
-        pgup2 {
-            bindings = <&kp PG_UP>;
-            key-positions = <6 7>;
-        };
-
-        pgdn2 {
-            bindings = <&kp PG_DN>;
-            key-positions = <30 31>;
-        };
-
-        home {
-            bindings = <&kp HOME>;
-            key-positions = <1 2>;
-        };
-
-        end {
-            bindings = <&kp END>;
-            key-positions = <25 26>;
-        };
-
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <13 14>;
-        };
-
-        home2 {
-            bindings = <&kp HOME>;
-            key-positions = <9 10>;
-        };
-
-        esc2 {
-            bindings = <&kp ESC>;
-            key-positions = <21 22>;
-        };
-
-        end2 {
-            bindings = <&kp END>;
-            key-positions = <33 34>;
-        };
-
-        prev {
-            bindings = <&mkp MB4>;
-            key-positions = <16 17>;
-        };
-
-        next {
-            bindings = <&mkp MB5>;
-            key-positions = <18 19>;
         };
     };
 
