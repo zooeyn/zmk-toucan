@@ -143,66 +143,6 @@
             key-positions = <39 40 41>;
         };
 
-        home {
-            bindings = <&kp HOME>;
-            key-positions = <13 14>;
-        };
-
-        end {
-            bindings = <&kp END>;
-            key-positions = <21 22>;
-        };
-
-        prev {
-            bindings = <&mkp MB4>;
-            key-positions = <1 2>;
-        };
-
-        next {
-            bindings = <&mkp MB5>;
-            key-positions = <9 10>;
-        };
-
-        page-down {
-            bindings = <&kp PG_DN>;
-            key-positions = <28 29>;
-        };
-
-        page-down-2 {
-            bindings = <&kp PG_DN>;
-            key-positions = <30 31>;
-        };
-
-        page-up {
-            bindings = <&kp PG_UP>;
-            key-positions = <4 5>;
-        };
-
-        page-up-2 {
-            bindings = <&kp PG_UP>;
-            key-positions = <6 7>;
-        };
-
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <16 17>;
-        };
-
-        esc-2 {
-            bindings = <&kp ESC>;
-            key-positions = <18 19>;
-        };
-
-        dictate {
-            bindings = <&kp LA(SPACE)>;
-            key-positions = <25 26>;
-        };
-
-        dictate-2 {
-            bindings = <&kp LA(SPACE)>;
-            key-positions = <33 34>;
-        };
-
         one {
             bindings = <&kp N1>;
             key-positions = <1 13>;
@@ -251,6 +191,56 @@
         zero {
             bindings = <&kp N0>;
             key-positions = <10 22>;
+        };
+
+        excl {
+            bindings = <&kp EXCL>;
+            key-positions = <25 13>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <14 26>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <15 27>;
+        };
+
+        dollar {
+            bindings = <&kp DLLR>;
+            key-positions = <28 16>;
+        };
+
+        percent {
+            bindings = <&kp PRCNT>;
+            key-positions = <29 17>;
+        };
+
+        amps {
+            bindings = <&kp AMPS>;
+            key-positions = <18 30>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <32 20>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <32 20>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <33 21>;
+        };
+
+        backslash {
+            bindings = <&kp BSLH>;
+            key-positions = <22 34>;
         };
     };
 
