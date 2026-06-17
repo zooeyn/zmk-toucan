@@ -142,6 +142,66 @@
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <39 40 41>;
         };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <13 14>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <21 22>;
+        };
+
+        prev {
+            bindings = <&mkp MB4>;
+            key-positions = <1 2>;
+        };
+
+        next {
+            bindings = <&mkp MB5>;
+            key-positions = <9 10>;
+        };
+
+        page-down {
+            bindings = <&kp PG_DN>;
+            key-positions = <28 29>;
+        };
+
+        page-down-2 {
+            bindings = <&kp PG_DN>;
+            key-positions = <30 31>;
+        };
+
+        page-up {
+            bindings = <&kp PG_UP>;
+            key-positions = <4 5>;
+        };
+
+        page-up-2 {
+            bindings = <&kp PG_UP>;
+            key-positions = <6 7>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <16 17>;
+        };
+
+        esc-2 {
+            bindings = <&kp ESC>;
+            key-positions = <18 19>;
+        };
+
+        dictate {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <25 26>;
+        };
+
+        dictate-2 {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <33 34>;
+        };
     };
 
     keymap {
