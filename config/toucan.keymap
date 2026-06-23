@@ -192,6 +192,16 @@
             bindings = <&kp N0>;
             key-positions = <10 22>;
         };
+
+        wispr {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <37 40>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <38 39>;
+        };
     };
 
     keymap {
