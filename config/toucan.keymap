@@ -141,6 +141,41 @@
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <39 40 41>;
         };
+
+        excl {
+            bindings = <&kp EXCL>;
+            key-positions = <14 15>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <16 15>;
+        };
+
+        apostrophe {
+            bindings = <&kp SQT>;
+            key-positions = <2 3>;
+        };
+
+        quote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <3 4>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <26 27>;
+        };
+
+        dollar {
+            bindings = <&kp DLLR>;
+            key-positions = <27 28>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <1 2>;
+        };
     };
 
     keymap {
