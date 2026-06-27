@@ -198,8 +198,8 @@
             key-positions = <21 22>;
         };
 
-        del {
-            bindings = <&kp DEL>;
+        delete-word {
+            bindings = <&kp LC(BSPC)>;
             key-positions = <33 34>;
         };
     };
