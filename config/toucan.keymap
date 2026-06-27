@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 // Globals
 
@@ -142,6 +143,16 @@
             key-positions = <39 40 41>;
         };
 
+        squote {
+            bindings = <&kp APOS>;
+            key-positions = <2 3>;
+        };
+
+        dquote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <3 4>;
+        };
+
         excl {
             bindings = <&kp EXCL>;
             key-positions = <14 15>;
@@ -152,29 +163,44 @@
             key-positions = <16 15>;
         };
 
-        apostrophe {
-            bindings = <&kp SQT>;
-            key-positions = <2 3>;
-        };
-
-        quote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <3 4>;
-        };
-
-        hash {
-            bindings = <&kp HASH>;
+        copy {
+            bindings = <&kp LC(C)>;
             key-positions = <26 27>;
         };
 
-        dollar {
-            bindings = <&kp DLLR>;
+        paste {
+            bindings = <&kp LC(V)>;
             key-positions = <27 28>;
         };
 
-        at {
-            bindings = <&kp AT>;
-            key-positions = <1 2>;
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <25 26>;
+        };
+
+        esc-left {
+            bindings = <&kp ESCAPE>;
+            key-positions = <2 1>;
+        };
+
+        esc-right {
+            bindings = <&kp ESC>;
+            key-positions = <9 10>;
+        };
+
+        start-line {
+            bindings = <&kp HOME>;
+            key-positions = <13 14>;
+        };
+
+        end-line {
+            bindings = <&kp END>;
+            key-positions = <21 22>;
+        };
+
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <33 34>;
         };
     };
 
@@ -190,21 +216,12 @@
             >;
         };
 
-        left {
+        sym {
             bindings = <
-&trans  &trans  &trans    &trans     &trans     &trans   &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END  &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &trans    &trans     &trans     &trans   &kp N0  &kp N1  &kp N2  &kp N3  &trans  &trans
-&trans  &trans  &trans    &trans     &trans     &trans
-            >;
-        };
-
-        right {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp UP  &kp RIGHT  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5     &kp N6    &kp N7     &kp N8     &kp N9     &kp N0    &trans
+&trans  &mkp MB4  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &mkp MB5  &trans
+&trans  &kp EXCL  &kp AT    &kp HASH   &kp DLLR   &kp PRCNT  &kp AMPS  &kp GRAVE  &kp TILDE  &kp PIPE   &kp BSLH  &trans
+&trans  &trans    &trans    &trans     &trans     &trans
             >;
         };
     };
