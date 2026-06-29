@@ -171,6 +171,11 @@
             bindings = <&tog 1>;
             key-positions = <36 41>;
         };
+
+        studio {
+            bindings = <&studio_unlock>;
+            key-positions = <36 37 38 39 40 41>;
+        };
     };
 
     keymap {
