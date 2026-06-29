@@ -166,6 +166,11 @@
             bindings = <&kp LC(RIGHT)>;
             key-positions = <30 31>;
         };
+
+        layer-lock {
+            bindings = <&tog 1>;
+            key-positions = <36 41>;
+        };
     };
 
     keymap {
