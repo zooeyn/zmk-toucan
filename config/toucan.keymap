@@ -166,7 +166,7 @@
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <21 20 39>;
+            key-positions = <21 20>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
