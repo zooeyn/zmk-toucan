@@ -168,7 +168,7 @@
         };
 
         dictate {
-            bindings = <&kp LA(SPACE)>;
+            bindings = <&kp LC(SPACE)>;
             key-positions = <36 41>;
         };
     };
