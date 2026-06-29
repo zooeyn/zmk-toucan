@@ -93,42 +93,42 @@
 
         lbrc {
             bindings = <&kp LBRC>;
-            key-positions = <4 5>;
+            key-positions = <2 3>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         rbrc {
             bindings = <&kp RBRC>;
-            key-positions = <6 7>;
+            key-positions = <3 4>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         lpar {
             bindings = <&kp LPAR>;
-            key-positions = <16 17>;
+            key-positions = <14 15>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         rpar {
             bindings = <&kp RPAR>;
-            key-positions = <18 19>;
+            key-positions = <16 15>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         lbkt {
             bindings = <&kp LBKT>;
-            key-positions = <28 29>;
+            key-positions = <26 27>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
         rbkt {
             bindings = <&kp RBKT>;
-            key-positions = <30 31>;
+            key-positions = <28 27>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
@@ -141,66 +141,6 @@
         bt_clear {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <39 40 41>;
-        };
-
-        squote {
-            bindings = <&kp APOS>;
-            key-positions = <2 3>;
-        };
-
-        dquote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <3 4>;
-        };
-
-        excl {
-            bindings = <&kp EXCL>;
-            key-positions = <14 15>;
-        };
-
-        colon {
-            bindings = <&kp COLON>;
-            key-positions = <16 15>;
-        };
-
-        copy {
-            bindings = <&kp LC(C)>;
-            key-positions = <26 27>;
-        };
-
-        paste {
-            bindings = <&kp LC(V)>;
-            key-positions = <27 28>;
-        };
-
-        cut {
-            bindings = <&kp LC(X)>;
-            key-positions = <25 26>;
-        };
-
-        esc-left {
-            bindings = <&kp ESC>;
-            key-positions = <2 1>;
-        };
-
-        esc-right {
-            bindings = <&kp ESC>;
-            key-positions = <9 10>;
-        };
-
-        home {
-            bindings = <&kp HOME>;
-            key-positions = <13 14>;
-        };
-
-        end {
-            bindings = <&kp END>;
-            key-positions = <21 22>;
-        };
-
-        delete-word {
-            bindings = <&kp LC(BSPC)>;
-            key-positions = <33 34>;
         };
     };
 
@@ -218,9 +158,9 @@
 
         sym {
             bindings = <
-&trans  &kp N1        &kp N2    &kp N3     &kp N4     &kp N5     &kp N6    &kp N7     &kp N8     &kp N9     &kp N0         &trans
-&trans  &kp LC(LEFT)  &mkp MB4  &kp PG_UP  &kp PG_DN  &mkp MB5   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp LC(RIGHT)  &trans
-&trans  &kp SEMI      &kp AT    &kp HASH   &kp DLLR   &kp PRCNT  &kp AMPS  &kp GRAVE  &kp TILDE  &kp PIPE   &kp BSLH       &trans
+&trans  &kp N1        &kp N2    &kp N3     &kp N4     &kp N5     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0         &trans
+&trans  &kp LC(LEFT)  &mkp MB4  &kp PG_UP  &kp PG_DN  &mkp MB5   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp LC(RIGHT)  &trans
+&trans  &kp EXCL      &kp AT    &kp HASH   &kp DLLR   &kp PRCNT  &trans    &trans    &trans  &trans     &trans         &trans
 &trans  &trans        &trans    &trans     &trans     &trans
             >;
         };
