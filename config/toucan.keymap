@@ -142,6 +142,36 @@
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <39 40 41>;
         };
+
+        esc-left {
+            bindings = <&kp ESC>;
+            key-positions = <16 17>;
+        };
+
+        esc-right {
+            bindings = <&kp ESC>;
+            key-positions = <19 18>;
+        };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <4 5>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <6 7>;
+        };
+
+        word-left {
+            bindings = <&kp LC(LEFT)>;
+            key-positions = <28 29>;
+        };
+
+        word-right {
+            bindings = <&kp LC(RIGHT)>;
+            key-positions = <30 31>;
+        };
     };
 
     keymap {
@@ -152,16 +182,25 @@
 &kp GRAVE        &kp Q             &kp W           &kp F           &kp P               &kp B            &kp J  &kp L                &kp U            &kp Y            &kp SEMI           &kp BSLH
 &kp ESC          &mt LEFT_SHIFT A  &mt LEFT_GUI R  &mt LEFT_ALT S  &mt LEFT_CONTROL T  &kp G            &kp M  &mt RIGHT_CONTROL N  &mt RIGHT_ALT E  &mt RIGHT_GUI I  &mt RIGHT_SHIFT O  &kp APOS
 &kp LSHFT        &kp Z             &kp X           &kp C           &kp D               &kp V            &kp K  &kp H                &kp COMMA        &kp DOT          &kp FSLH           &kp RSHIFT
-&lt 1 LA(SPACE)  &kp SPACE         &kp TAB         &kp ENTER       &kp BSPC            &lt 1 LC(SPACE)
+&lt 1 LA(SPACE)  &kp SPACE         &kp TAB         &kp ENTER       &kp BSPC            &lt 2 LC(SPACE)
             >;
         };
 
-        sym {
+        left {
             bindings = <
-&trans  &kp N1        &kp N2    &kp N3     &kp N4     &kp N5     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0         &trans
-&trans  &kp LC(LEFT)  &mkp MB4  &kp PG_UP  &kp PG_DN  &mkp MB5   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp LC(RIGHT)  &trans
-&trans  &kp EXCL      &kp AT    &kp HASH   &kp DLLR   &kp PRCNT  &trans    &trans    &trans  &trans     &trans         &trans
-&trans  &trans        &trans    &trans     &trans     &trans
+&trans  &trans  &trans    &trans     &trans     &trans    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &mkp MB4  &kp PG_UP  &kp PG_DN  &mkp MB5  &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans    &trans     &trans     &trans    &kp N0  &kp N1  &kp N2  &kp N3  &trans  &trans
+&trans  &trans  &trans    &trans     &trans     &trans
+            >;
+        };
+
+        right {
+            bindings = <
+&trans  &trans    &trans  &trans    &trans    &trans     &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans    &trans  &trans    &trans    &trans     &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &trans    &trans  &trans    &trans    &trans
             >;
         };
     };
