@@ -166,6 +166,11 @@
             bindings = <&kp LC(RIGHT)>;
             key-positions = <30 31>;
         };
+
+        dictate {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <36 41>;
+        };
     };
 
     keymap {
@@ -176,7 +181,7 @@
 &kp GRAVE        &kp Q         &kp W       &kp F       &kp P        &kp B            &kp J  &kp L        &kp U       &kp Y       &kp SEMI      &kp BSLH
 &kp ESC          &mt LSHIFT A  &mt LGUI R  &mt LALT S  &mt LCTRL T  &kp G            &kp M  &mt RCTRL N  &mt RALT E  &mt RGUI I  &mt RSHIFT O  &kp APOS
 &kp LSHIFT       &kp Z         &kp X       &kp C       &kp D        &kp V            &kp K  &kp H        &kp COMMA   &kp DOT     &kp FSLH      &kp RSHIFT
-&lt 1 LA(SPACE)  &kp SPACE     &kp TAB     &kp ENTER   &kp BSPC     &lt 2 LC(SPACE)
+&lt 1 LA(SPACE)  &kp SPACE     &kp TAB     &kp ENTER   &kp BSPC     &lt 2 LA(SPACE)
             >;
         };
 
