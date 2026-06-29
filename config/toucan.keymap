@@ -14,8 +14,6 @@
     quick-release;
 };
 
-&sl { ignore-modifiers; };
-
 &lt {
     flavor = "balanced";
     tapping-term-ms = <200>;
@@ -30,10 +28,6 @@
 };
 
 / {
-    behaviors {
-        /* Sticky mod-tap for homerow mods. */
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -41,46 +35,33 @@
             bindings = <&kp CAPS>;
             key-positions = <24 35>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
+            timeout-ms = <TIMEOUT_MS>;
         };
 
-        caret {
-            bindings = <&kp CARET>;
-            key-positions = <8 9>;
+        layer-lock {
+            bindings = <&tog 1>;
+            key-positions = <36 41>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
-        times {
-            bindings = <&kp STAR>;
-            key-positions = <8 7>;
+        studio {
+            bindings = <&studio_unlock>;
+            key-positions = <0 11>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <21 20 39>;
+        bt_next {
+            bindings = <&bt BT_NXT>;
+            key-positions = <36 37 38>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
 
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <19 20>;
-            require-prior-idle-ms = <PRIOR_IDLE_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-        };
-
-        under {
-            bindings = <&kp UNDER>;
-            key-positions = <32 33>;
-            require-prior-idle-ms = <PRIOR_IDLE_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <32 31>;
+        bt_clear {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <39 40 41>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
@@ -127,54 +108,88 @@
             timeout-ms = <TIMEOUT_MS>;
         };
 
-        bt_next {
-            bindings = <&bt BT_NXT>;
-            key-positions = <36 37 38>;
-        };
-
-        bt_clear {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <39 40 41>;
-        };
-
-        esc-left {
-            bindings = <&kp ESC>;
-            key-positions = <16 17>;
-        };
-
-        esc-right {
-            bindings = <&kp ESC>;
-            key-positions = <19 18>;
-        };
-
         home {
             bindings = <&kp HOME>;
             key-positions = <4 5>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
+            timeout-ms = <TIMEOUT_MS>;
         };
 
         end {
             bindings = <&kp END>;
             key-positions = <6 7>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
+            timeout-ms = <TIMEOUT_MS>;
+        };
+
+        esc-left {
+            bindings = <&kp ESC>;
+            key-positions = <16 17>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
+            timeout-ms = <TIMEOUT_MS>;
+        };
+
+        esc-right {
+            bindings = <&kp ESC>;
+            key-positions = <19 18>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
+            timeout-ms = <TIMEOUT_MS>;
         };
 
         word-left {
             bindings = <&kp LC(LEFT)>;
             key-positions = <28 29>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
+            timeout-ms = <TIMEOUT_MS>;
         };
 
         word-right {
             bindings = <&kp LC(RIGHT)>;
             key-positions = <30 31>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
+            timeout-ms = <TIMEOUT_MS>;
         };
 
-        layer-lock {
-            bindings = <&tog 1>;
-            key-positions = <36 41>;
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <8 9>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
+            timeout-ms = <TIMEOUT_MS>;
         };
 
-        studio {
-            bindings = <&studio_unlock>;
-            key-positions = <0 11>;
+        times {
+            bindings = <&kp STAR>;
+            key-positions = <8 7>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
+            timeout-ms = <TIMEOUT_MS>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <21 20 39>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
+            timeout-ms = <TIMEOUT_MS>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <19 20>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
+            timeout-ms = <TIMEOUT_MS>;
+        };
+
+        under {
+            bindings = <&kp UNDER>;
+            key-positions = <32 33>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
+            timeout-ms = <TIMEOUT_MS>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <32 31>;
+            require-prior-idle-ms = <PRIOR_IDLE_MS>;
+            timeout-ms = <TIMEOUT_MS>;
         };
     };
 
