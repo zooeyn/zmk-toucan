@@ -59,7 +59,7 @@
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <21 20>;
+            key-positions = <21 20 39>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
             timeout-ms = <TIMEOUT_MS>;
         };
@@ -174,7 +174,7 @@
 
         studio {
             bindings = <&studio_unlock>;
-            key-positions = <36 37 38 39 40 41>;
+            key-positions = <0 11>;
         };
     };
 
