@@ -43,12 +43,6 @@
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
         };
 
-        layer-lock {
-            bindings = <&tog 1>;
-            key-positions = <36 41>;
-            require-prior-idle-ms = <PRIOR_IDLE_MS>;
-        };
-
         caret {
             bindings = <&kp CARET>;
             key-positions = <8 9>;
