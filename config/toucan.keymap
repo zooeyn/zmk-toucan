@@ -39,7 +39,7 @@
 
         caps-lock {
             bindings = <&kp CAPS>;
-            key-positions = <13 22>;
+            key-positions = <24 35>;
             require-prior-idle-ms = <PRIOR_IDLE_MS>;
         };
 
