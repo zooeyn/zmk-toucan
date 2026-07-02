@@ -167,13 +167,13 @@
             key-positions = <14 15>;
         };
 
-        colon {
-            bindings = <&kp COLON>;
-            key-positions = <15 16>;
-        };
-
         excl {
             bindings = <&kp EXCL>;
+            key-positions = <15 14>;
+        };
+
+        at {
+            bindings = <&kp AT>;
             key-positions = <26 27>;
         };
 
@@ -189,7 +189,7 @@
         base {
             bindings = <
 &kp GRAVE        &kp Q         &kp W       &kp F       &kp P        &kp B            &kp J  &kp L        &kp U       &kp Y       &kp SEMI      &kp BSLH
-&key_repeat      &mt LSHIFT A  &mt LGUI R  &mt LALT S  &mt LCTRL T  &kp G            &kp M  &mt RCTRL N  &mt RALT E  &mt RGUI I  &mt RSHIFT O  &kp APOS
+&kp ESC          &mt LSHIFT A  &mt LGUI R  &mt LALT S  &mt LCTRL T  &kp G            &kp M  &mt RCTRL N  &mt RALT E  &mt RGUI I  &mt RSHIFT O  &kp APOS
 &kp LSHIFT       &kp Z         &kp X       &kp C       &kp D        &kp V            &kp K  &kp H        &kp COMMA   &kp DOT     &kp FSLH      &kp RSHIFT
 &lt 1 LA(SPACE)  &kp SPACE     &kp TAB     &kp ENTER   &kp BSPC     &lt 1 LA(SPACE)
             >;
@@ -197,10 +197,10 @@
 
         sym {
             bindings = <
-&kp C_VOL_UP  &kp N1  &kp N2    &kp N3     &kp N4     &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0    &kp C_BRI_UP
-&kp C_VOL_DN  &kp AT  &mkp MB4  &kp PG_UP  &kp PG_DN  &mkp MB5  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp AMPS  &kp C_BRI_DN
-&trans        &trans  &trans    &trans     &trans     &trans    &trans    &trans    &trans  &trans     &trans    &trans
-&trans        &trans  &trans    &trans     &trans     &trans
+&trans  &kp N1        &kp N2    &kp N3     &kp N4     &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0        &trans
+&trans  &kp C_VOL_DN  &mkp MB4  &kp PG_UP  &kp PG_DN  &mkp MB5  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp C_VOL_UP  &trans
+&trans  &trans        &trans    &trans     &trans     &trans    &trans    &trans    &trans  &trans     &trans        &trans
+&trans  &trans        &trans    &trans     &trans     &trans
             >;
         };
     };
